@@ -1,12 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    font-size: 5rem;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
 
-/* 
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #404040;
+}
+.appContainer {
+    min-width: 36rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eeeeee;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.formContainer {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.formContainer > p {
+    font-size: small;
+}
 
-*/
+input {
+    width: 100%;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.todosContainer {
+    width: 100%;
+}
+
+.todoWrapper {
+    border: 1px solid rgb(60, 60, 60);
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.todoWrapper:hover {
+    background: #e3e3e3;
+}
+
+.btn {
+    margin: 0 4px;
+    background: red;
+    color: white;
+    border-radius: 12px;
+}
+
+.todoWrapper > .btnWrapper {
+    visibility: hidden;
+    background: none;
+    border: none;
+    padding: .2rem .5rem;
+}
+
+.todoWrapper:hover > .btnWrapper {
+    background: #e3e3e3;
+    visibility: visible;
+}
